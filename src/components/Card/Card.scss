@@ -1,0 +1,45 @@
+.Card {
+    background-color: var(--white);
+    border-radius: var(--borderRadiusBig);
+    padding: var(--size-8);
+    display: flex;
+    flex-direction: column;
+    min-height: rem(446);
+    color: var(--textPrimary);
+
+    &__tag {
+        margin-bottom: var(--size-8);
+    }
+
+    &__text {
+        font-size: rem(32);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    &__bottom {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        color: var(--textPrimary);
+
+        &:visited {
+            color: var(--textPrimary);
+        }
+    }
+
+    &__date {
+        font-size: rem(20);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    &__icon {
+        width: rem(16);
+        height: rem(16);
+    }
+}

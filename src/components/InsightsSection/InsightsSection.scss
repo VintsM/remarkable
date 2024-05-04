@@ -1,0 +1,15 @@
+.InsightsSection {
+    background-color: var(--bgPrimary);
+    padding-top: var(--size-36);
+    padding-bottom: var(--size-24);
+
+    &__title {
+        margin-bottom: var(--size-12);
+    }
+
+    &__content {
+        margin-bottom: var(--size-24);
+    }
+
+
+}

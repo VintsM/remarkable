@@ -1,0 +1,11 @@
+.Tag {
+    display: inline-block;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    border-radius: var(--borderRadiusBig);
+    background-color: var(--accent);
+    color: var(--textPrimary);
+    padding: rem(8) rem(12);
+}

@@ -1,6 +1,6 @@
 .Button {
     background-color: var(--buttonPrimaryBg);
-    border-radius: var(--borderRadius);
+    border-radius: var(--borderRadiusBig);
     border: none;
     color: var(--buttonPrimaryText);
     padding: rem(12) rem(24);
@@ -23,6 +23,16 @@
         &:hover {
             background-color: var(--buttonSecondaryBgHover);
             color: var(--buttonSecondaryTextHover);
+        }
+    }
+
+    &_tertiary {
+        background-color: var(--buttonTertiaryBg);
+        color: var(--buttonTertiaryText);
+
+        &:hover {
+            background-color: var(--buttonTertiaryBgHover);
+            color: var(--buttonTertiaryTextHover);
         }
     }
 }

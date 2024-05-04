@@ -6,7 +6,7 @@ export type ButtonProps = {
     text: string;
     onClick?: MouseEventHandler<HTMLButtonElement>;
     className?: string;
-    type?: 'secondary';
+    type?: 'secondary' | 'tertiary';
 };
 
 const Button: FC<ButtonProps> = ({ text, onClick, className, type }) => {
