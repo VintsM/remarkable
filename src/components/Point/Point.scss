@@ -4,6 +4,9 @@
     position: relative;
     padding-left: calc(var(--pointSize) + var(--size-3));
     color: var(--textPrimary);
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: 150%;
 
     &::before {
         content: '';

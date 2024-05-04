@@ -1,9 +1,9 @@
 .Photo {
     &__img {
         display: block;
-        width: 100%;
-        height: auto;
-        margin-left: var(--containerPadding);
+        width: calc(100% + var(--containerPadding));
+        height: rem(580);
+        object-fit: cover;
         border-radius: var(--borderRadiusSmall);
     }
 }

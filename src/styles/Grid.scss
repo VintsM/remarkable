@@ -12,4 +12,10 @@
             grid-column-start: #{$i};
         }
     }
+
+    &__cell {
+        &_center {
+            place-content: center;
+        }
+    }
 }

@@ -16,7 +16,7 @@ export interface PhotoProps {
 export const Photo: FC<PhotoProps> = ({ sectionHeader, image }) => {
     return (
         <div className="Photo Grid">
-            <SectionHeader className="Grid__cell_5" {...sectionHeader} />
+            <SectionHeader className="Grid__cell_5 Grid__cell_center" {...sectionHeader} />
             <div className="Grid__cell_6 Grid__cell_start-7">
                 <img className="Photo__img" src={image.url} alt={image.alt} />
             </div>

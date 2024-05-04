@@ -50,6 +50,7 @@ export const Hero: FC<Props> = ({}) => {
                     </div>
                 </div>
                 <svg
+                    className="Hero__logo"
                     width="100%"
                     viewBox="0 0 1328 203"
                     fill="#E7F3F3"

@@ -2,6 +2,7 @@
     background-color: var(--bgSecondary);
     height: rem(919);
     padding: var(--size-14);
+    box-sizing: border-box;
     position: relative;
 
     &__container {

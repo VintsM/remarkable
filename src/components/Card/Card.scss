@@ -6,6 +6,7 @@
     flex-direction: column;
     min-height: rem(446);
     color: var(--textPrimary);
+    box-sizing: border-box;
 
     &__tag {
         margin-bottom: var(--size-8);
