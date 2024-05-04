@@ -9,7 +9,7 @@ const getConfig = (env, argv): webpack.Configuration => ({
     entry: './src/index.tsx',
     output: {
         publicPath: argv.mode === 'development' ? '/' : '/remarkable/',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         filename: 'bundle.js',
     },
     module: {

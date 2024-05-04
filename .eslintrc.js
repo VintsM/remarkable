@@ -9,7 +9,7 @@ module.exports = {
     ],
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint'],
-    ignorePatterns: ['dist', 'package.json', 'package-lock.json'],
+    ignorePatterns: ['docs', 'package.json', 'package-lock.json'],
     rules: {},
     overrides: [
         {
