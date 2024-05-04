@@ -1,0 +1,67 @@
+.FootSection {
+    background-color: var(--bgSecondary);
+    height: rem(919);
+    padding: var(--size-14);
+    position: relative;
+
+    &__container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: rem(1114px);
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        text-align: center;
+        color: var(--textSecondary);
+        font-size: rem(112);
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: rem(-4.48);
+        margin-bottom: var(--size-12);
+    }
+
+    &__bottom {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__link,
+    &__copy {
+        color: var(--textSecondary);
+        font-size: rem(16);
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: rem(24);
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:visited {
+            color: var(--textSecondary);
+        }
+    }
+
+    &__copy {
+        margin-left: auto;
+    }
+}

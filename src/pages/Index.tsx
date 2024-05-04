@@ -8,6 +8,7 @@ import Monastery from '@src/assets/monastery.jpg';
 import GoodPeople from '@src/assets/good_people.jpg';
 import GoodPeople2 from '@src/assets/good_people_2.jpg';
 import { InsightsSection } from '@components/InsightsSection/InsightsSection';
+import { FootSection } from '@components/FootSection/FootSection';
 
 interface Props {}
 
@@ -98,6 +99,7 @@ export const Index: FC<Props> = ({}) => {
                     },
                 }}
             />
+            <FootSection />
         </>
     );
 };
