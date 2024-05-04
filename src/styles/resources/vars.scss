@@ -1,0 +1,17 @@
+:root {
+    --font: 'General Sans', Helvetica, Arial, sans-serif;
+    --altFont: 'Boska', serif;
+    --borderRadius: #{rem(4)};
+
+    /* SIZES */
+    --size-1: #{rem(4)};
+    --size-3: #{rem(12)};
+    --size-6: #{rem(24)};
+    --size-12: #{rem(48)};
+    --size-14: #{rem(56)};
+    --size-16: #{rem(64)};
+    --size-24: #{rem(96)};
+    --size-36: #{rem(144)};
+
+    --containerPadding: var(--size-16);
+}

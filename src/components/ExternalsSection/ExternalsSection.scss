@@ -1,0 +1,24 @@
+.ExternalsSection {
+    background-color: var(--bgSecondary);
+    padding: var(--size-36) 0;
+
+    &__content {
+        &:not(:last-child) {
+            margin-bottom: var(--size-24);
+        }
+    }
+
+    &__header {
+        margin-bottom: var(--size-16);
+    }
+
+    &__cardWrapper {
+        &:nth-child(2n+1) {
+            padding-top: rem(160);
+        }
+
+        &:nth-child(3n+1) {
+            padding-top: rem(80);
+        }
+    }
+}

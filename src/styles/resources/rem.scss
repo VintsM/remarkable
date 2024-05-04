@@ -1,0 +1,14 @@
+@use "sass:math";
+
+$html-font-size: 16px;
+
+@function stripUnit($value) {
+    @if type-of($value) == 'number' and not unitless($value) {
+        @return math.div($value, $value * 0 + 1);
+    }
+    @return $value;
+}
+
+@function rem($value) {
+    @return #{calc(stripUnit($value) / stripUnit($html-font-size))}rem;
+}

@@ -1,0 +1,16 @@
+.External {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--textSecondary);
+    text-decoration: none;
+
+    &__text,
+    &__icon {
+        vertical-align: middle;
+    }
+
+    &_pad {
+        padding: 0 rem(20) rem(14);
+    }
+}

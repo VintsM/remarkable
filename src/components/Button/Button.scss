@@ -1,0 +1,28 @@
+.Button {
+    background-color: var(--buttonPrimaryBg);
+    border-radius: var(--borderRadius);
+    border: none;
+    color: var(--buttonPrimaryText);
+    padding: rem(12) rem(24);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: rem(16);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .2s ease;
+
+    &:hover {
+        background-color: var(--buttonPrimaryBgHover);
+    }
+
+    &_secondary {
+        background-color: var(--buttonSecondaryBg);
+        color: var(--buttonSecondaryText);
+
+        &:hover {
+            background-color: var(--buttonSecondaryBgHover);
+            color: var(--buttonSecondaryTextHover);
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.Container {
+    padding-left: var(--containerPadding);
+    padding-right: var(--containerPadding);
+    margin: 0 auto;
+    max-width: rem(1440);
+    box-sizing: border-box;
+    position: relative;
+}

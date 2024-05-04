@@ -1,0 +1,7 @@
+.ButtonGroup {
+    &__button {
+        &:not(:last-child) {
+            margin-right: var(--size-3);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: rem(20);
+
+    @for $i from 1 through 12 {
+        &__cell_#{$i} {
+            grid-column-end: span #{$i};
+        }
+
+        &__cell_start-#{$i} {
+            grid-column-start: #{$i};
+        }
+    }
+}

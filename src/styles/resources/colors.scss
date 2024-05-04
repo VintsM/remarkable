@@ -1,0 +1,31 @@
+@use 'sass:map';
+
+:root {
+    --dark: #131a1b;
+    --light: #e7f3f3;
+    --altDark: #203b40;
+    --altLight: #ffffff;
+    --accent: #cbf36e;
+    --altAccent: #276e6e;
+
+    --altDarkRgb: 32, 59, 64;
+
+    /* SWATCHES */
+    --brand-text: var(--dark);
+
+    /* THEMES */
+    --bgPrimary: var(--light);
+    --textPrimary: var(--dark);
+
+    --bgSecondary: var(--dark);
+    --textSecondary: var(--light);
+
+    --buttonPrimaryBg: var(--light);
+    --buttonPrimaryText: var(--dark);
+    --buttonPrimaryBgHover: var(--accent);
+
+    --buttonSecondaryBg: var(--altDark);
+    --buttonSecondaryText: var(--light);
+    --buttonSecondaryBgHover: var(--accent);
+    --buttonSecondaryTextHover: var(--dark);
+}

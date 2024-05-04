@@ -1,0 +1,10 @@
+.Hero {
+    position: relative;
+    background-color: var(--bgSecondary);
+    padding-bottom: var(--size-16);
+
+    &__content {
+        padding-top: rem(53);
+        margin-bottom: var(--size-24);
+    }
+}

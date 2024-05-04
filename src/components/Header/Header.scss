@@ -1,0 +1,100 @@
+.Header {
+    $buttonSize: 56;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-14) 0;
+
+    &__logo {
+
+    }
+
+    &__right {
+        position: relative;
+    }
+
+    &__nav {
+        width: 0;
+        height: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 50%;
+        opacity: 0;
+        background-color: rgba(var(--altDarkRgb), .5);
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        transition: .3s ease;
+    }
+
+    &__navButton {
+        --paddingVertical: #{rem(22)};
+        --paddingHorizontal: #{rem(15)};
+
+        width: rem($buttonSize);
+        height: rem($buttonSize);
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+        background-color: var(--altDark);
+        position: relative;
+        z-index: 1;
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            width: rem(26);
+            height: rem(1);
+            background-color: var(--light);
+            transform-origin: center center;
+            position: absolute;
+            left: var(--paddingHorizontal);
+            transition: .2s ease;
+        }
+
+        &:before {
+            top: var(--paddingVertical);
+        }
+
+        &:after {
+            bottom: var(--paddingVertical);
+        }
+
+        &_active {
+            &:before {
+                transform: translateY(6px) rotate(45deg);
+            }
+
+            &:after {
+                transform: translateY(-5px) rotate(-45deg);
+            }
+
+            & + .Header__nav {
+                width: 200px;
+                height: 128px;
+                padding: var(--size-6);
+                opacity: 1;
+                border-radius: rem(calc($buttonSize / 2));
+            }
+        }
+    }
+
+    &__navLink {
+        display: block;
+        color: var(--light);
+        text-decoration: none;
+        font-size: rem(16);
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: var(--size-3);
+        }
+    }
+}

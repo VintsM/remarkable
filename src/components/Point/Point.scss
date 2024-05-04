@@ -1,0 +1,28 @@
+.Point {
+    --pointSize: #{rem(12)};
+
+    position: relative;
+    padding-left: calc(var(--pointSize) + var(--size-3));
+    color: var(--textPrimary);
+
+    &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: var(--pointSize);
+        height: var(--pointSize);
+        border-radius: 50%;
+        background-color: var(--altDark);
+    }
+
+    &_secondary {
+        color: var(--textSecondary);
+
+        &::before {
+            background-color: var(--accent);
+        }
+    }
+}
